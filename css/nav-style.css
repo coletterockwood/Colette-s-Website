@@ -1,0 +1,26 @@
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .nav-button {
+    background-color: #f5f0eb;
+    color: #6b4e3d;
+    padding: 12px 20px;
+    border: 2px solid #d4c1b3;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .nav-button:hover {
+    background-color: #e7d9cf;
+    color: #4a3428;
+    border-color: #c0a899;
+  }
+  

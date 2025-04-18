@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Event Theme Generator</title>
+    <link rel="stylesheet" href="nav-style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf6f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .generator-container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        button {
+            background-color: #f5a6b3;
+            color: white;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ee8c9f;
+        }
+
+        .theme-result {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #b05b79;
+        }
+    </style>
+</head>
+<body>
+    <div class="generator-container">
+        <h1>🎉 AI Event Theme Generator</h1>
+        <p>Click below and let our "AI" give you an unforgettable party theme!</p>
+        <button onclick="generateTheme()">Generate Theme</button>
+        <div class="theme-result" id="themeResult"></div>
+    </div>
+
+    <script>
+        const themes = [
+            "Enchanted Garden Gala",
+            "Disco Night Under the Stars",
+            "Vintage Carnival Elegance",
+            "Masquerade Ball with a Twist",
+            "Midnight in Paris",
+            "Hollywood Red Carpet",
+            "Rustic Barn Chic",
+            "Neon Dreams Rave",
+            "Winter Wonderland Soirée",
+            "Tropical Island Escape",
+            "Pastel Tea Party",
+            "Boho Picnic Bliss",
+            "Outer Space Adventure",
+            "Alice in Wonderland",
+            "Bridgerton Garden Party"
+        ];
+
+        function generateTheme() {
+            const randomIndex = Math.floor(Math.random() * themes.length);
+            const selectedTheme = themes[randomIndex];
+            document.getElementById("themeResult").textContent = selectedTheme;
+        }
+    </script>
+
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-button">← Back to Professional Page</a>
+        <a href="scratch.html" class="nav-button">← Back to Colette Events</a>
+    </div>
+</body>
+</html>
